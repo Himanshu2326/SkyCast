@@ -867,7 +867,7 @@
   }
 
   .h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .right img {
@@ -911,6 +911,7 @@
 
 
 @media (max-width:450px) {
+
   .heading h2 {
     font-size: 1.4rem;
   }
