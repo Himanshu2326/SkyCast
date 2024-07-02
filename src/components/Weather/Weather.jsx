@@ -16,7 +16,7 @@ function Weather({ city, weatherData, setWeatherData }) {
     const [topCity, setTopCity] = useState([]);
 
 
-    let Key = '73c604d1c335623b5f574390a02b4485';
+    const Key = String(import.meta.env.VITE_WEATHER_API_KEY)
 
     //? City API :-- 
     useEffect(() => {
@@ -115,7 +115,7 @@ function Weather({ city, weatherData, setWeatherData }) {
                         weatherImg={weatherImg}
                     />
                     <Cities />
-                    
+
                 </>
             ) : (
                 <div>Loading...</div>
