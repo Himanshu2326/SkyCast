@@ -1,8 +1,22 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GitHub Repo Finder
 
-Currently, two official plugins are available:
+SkyCast is an React Based web Application that helps To find Weather Condition around the Globe.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Hosted Link
+
+https://sky-cast-dun.vercel.app/
+## Authors
+
+- [@himanshu2326](https://himanshu2326.github.io/PortFolio/)
+
+
+## Features
+
+- Made With ReactJs
+
+
+## 🚀 About Me
+I'm Himanshu Prajapati (full stack developer) Who is Passionate Towards Coding and Learning New Technologies to Upgrade My Skills, Ability and Knowledge.
+
