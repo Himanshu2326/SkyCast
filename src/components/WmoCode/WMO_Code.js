@@ -1,0 +1,26 @@
+
+
+export const wmoWeatherCodes = {
+    0: { description: "Clear sky", img: "Images/Clear.svg" },
+    1: { description: "Mainly clear", img: "Images/Clear.svg" },
+    2: { description: "Partly cloudy", img: "Images/Clouds.svg" },
+    3: { description: "Cloudy", img: "Images/Clouds.svg" },
+    45: { description: "Fog", img: "Images/Fog.svg" },
+    51: { description: "Light drizzle", img: "Images/Drizzle.svg" },
+    53: { description: "Moderate drizzle", img: "Images/Drizzle.svg" },
+    55: { description: "Dense drizzle", img: "Images/Drizzle.svg" },
+    61: { description: "Slight rain", img: "Images/Rain.svg" },
+    63: { description: "Moderate rain", img: "Images/Rain.svg" },
+    65: { description: "Heavy rain", img: "Images/Rain.svg" },
+    71: { description: "Slight snow", img: "Images/Snow.svg" },
+    73: { description: "Moderate snow", img: "Images/Snow.svg" },
+    75: { description: "Heavy snow", img: "Images/Snow.svg" },
+    80: { description: "Showers of rain", img: "Images/Rain.svg" },
+    81: { description: "Heavy rain showers", img: "Images/Rain.svg" },
+    82: { description: "Violent rain showers", img: "Images/Rain.svg" },
+    85: { description: "Showers of snow", img: "Images/Snow.svg" },
+    86: { description: "Heavy snow showers", img: "Images/Snow.svg" },
+    95: { description: "Thunderstorm", img: "Images/Thunderstorm.svg" },
+    96: { description: "Thunderstorm with slight hail", img: "Images/Thunderstorm.svg" },
+    99: { description: "Thunderstorm with heavy hail", img: "Images/Thunderstorm.svg" },
+};

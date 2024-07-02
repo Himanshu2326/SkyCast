@@ -1,0 +1,1201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+
+.h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.btn {
+  background: linear-gradient(to top, rgb(119, 21, 255), rgb(180, 125, 251));
+  color: white;
+  padding: 6px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.loction-btn {
+  background: linear-gradient(to top, rgb(119, 21, 255), rgb(180, 125, 251));
+  color: white;
+  padding: 5px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* :root{
+  
+} */
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+=============================
+? -> NavBar Css 
+=============================
+ */
+
+.navbar {
+  font-size: 1.15rem;
+  margin-left: 9rem;
+  font-family: "Poppins", sans-serif;
+  margin-right: 9rem;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.inp_search {
+  padding: 5px 10px;
+  margin-right: 3px;
+  transition: .1s;
+  border-radius: 7px;
+}
+
+.inp_search:focus {
+  outline: 2px solid rgb(159, 62, 255);
+}
+
+.span_C{
+  color: rgb(183 54 255);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+/*
+=============================
+? -> First Section Css 
+=============================
+ */
+
+.First_Section {
+  border-radius: 20px;
+  height: 25rem;
+  color: white;
+  margin-left: 0 !important;
+  background: url('/Images/Aurora1.jpg') center center/cover no-repeat;
+}
+
+.left .D_and_T p {
+  font-size: 0.8rem;
+}
+
+.weatherCondition {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+.weatherCondition .condition span i {
+  background: linear-gradient(to right, rgb(154, 59, 244), rgb(169, 108, 255));
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  padding: 7px 8px;
+}
+
+.condition .wc {
+  font-size: 0.9rem;
+}
+
+.right {
+  position: relative;
+  background: linear-gradient(to bottom, rgb(199 139 255), rgb(105 1 251));
+  border-radius: 20px;
+  box-shadow: 2px -2px 3px 0px rgb(157 228 225);
+  min-width: 12rem;
+  min-height: 14rem;
+}
+
+.right h5 {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  background: #6a0cd9;
+  font-size: 0.8rem;
+  padding: 1px 6px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.right img {
+  height: 8.5rem;
+}
+
+
+/*
+=============================
+? -> Second Section Css 
+=============================
+ */
+
+.weather_Cards {
+  overflow-y: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.weather_Cards::-webkit-scrollbar {
+  display: none;
+}
+
+
+.card {
+  background: #e0e0e0;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+  font-weight: 400;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  min-width: 16rem;
+  height: 18rem;
+  margin: 0.8rem 0.7rem;
+  box-shadow: 3px 3px 0px 0px #e6e6e6;
+}
+
+.card .weather_image {
+  height: 100px;
+}
+
+.cond {
+  position: absolute;
+  background: linear-gradient(to bottom, rgb(183 106 255), rgb(106 0 255));
+  color: white;
+  padding: 3px 6px;
+  top: 2px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  left: 5px;
+  right: 5px;
+  font-weight: 500;
+}
+
+.card h3 {
+  font-size: 2rem;
+}
+
+.Air_Rain p i {
+  color: rgb(167 128 214);
+}
+
+
+.card:hover {
+  background: linear-gradient(to bottom, rgb(169, 108, 255), rgb(142, 35, 243));
+  color: white;
+  transition: 0.3s;
+
+}
+
+.card:hover .Air_Rain p i {
+  color: white;
+}
+
+.day {
+  background: #6a0cd9;
+  color: white;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.minmax_temp {
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+.Air_Rain p i {
+  font-size: 0.8rem;
+}
+
+.card p {
+  font-size: 0.7rem;
+}
+
+.moveCard button {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to bottom, rgb(142, 35, 243), rgb(109 16 239));
+  padding: 7px 12px;
+  border-radius: 30px;
+}
+
+.Divider .text {
+  color: #28057c;
+  padding: 2px 15px;
+  display: flex;
+  border-radius: 5px;
+  font-weight: 500;
+  align-items: center;
+  box-shadow: -1px -1px 1px 1px #aaaaff;
+}
+
+/*
+=============================
+? -> Third Section Css 
+=============================
+ */
+
+
+.Top_City_Weather {
+  background: rgb(245, 245, 245);
+  padding: 5rem 3rem;
+
+}
+
+.Top_City_Weather .Heading h2 {
+  font-size: 2.4rem;
+  color: black;
+  font-weight: 600;
+}
+
+.Top_City_Weather .Heading p {
+  font-size: 0.9rem;
+  color: rgb(91, 91, 91);
+}
+
+
+.Top_Cities {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Adjust as necessary */
+}
+
+.city {
+  border-radius: 30px;
+  padding-left: 1.25rem;
+  padding-right: 4.2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+  min-width: 12rem;
+  min-height: 18rem;
+  animation: scroll-animation 5s infinite;
+  width: 200px;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateX(0rem);
+  }
+
+  15% {
+    transform: translateX(0rem);
+  }
+
+  25% {
+    transform: translateX(-7rem);
+  }
+
+  40% {
+    transform: translateX(-7rem);
+  }
+
+  50% {
+    transform: translateX(-20rem);
+  }
+
+  65% {
+    transform: translateX(-20rem);
+  }
+
+  80% {
+    transform: translateX(-7rem);
+  }
+
+  90% {
+    transform: translateX(-7rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+
+}
+
+.city img {
+  height: 3rem;
+}
+
+.city .loc {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.city .temp {
+  font-size: 2.5rem;
+  font-weight: 500;
+
+}
+
+.Top_Cites {
+  max-width: 65%;
+  overflow-y: auto;
+}
+
+.Top_Cites::-webkit-scrollbar {
+  display: none;
+}
+
+.city {
+  position: relative;
+  overflow: hidden;
+}
+
+.city::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-size: cover;
+  filter: blur(1.2px);
+  z-index: 0;
+}
+
+.city>* {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/*
+=============================
+? -> Today Weather Css 
+=============================
+ */
+
+
+.TodayWeather {
+  background: url('/Images/Aurora4.png') center center/cover no-repeat;
+  margin-top: 0 !important;
+}
+
+.heading h2 {
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.heading p {
+  text-align: center;
+  width: 60%;
+  font-size: 0.9rem;
+}
+
+.sunrise {
+  background: url('/Images/sunrise.webp') center center/cover no-repeat;
+  border-radius: 20px;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  padding-right: 3.2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+}
+
+.sunset {
+  background: url('/Images/sunset.webp') center center/cover no-repeat;
+  border-radius: 20px;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  padding-right: 3.2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+}
+
+
+.sunrise h6,
+.sunset h6 {
+  font-size: 1.1rem;
+}
+
+.sunrise h5,
+.sunset h5 {
+  font-size: 1.3rem;
+}
+
+.Wind_Rain {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+
+.Wind_Rain .condition span i {
+  background: linear-gradient(to right, rgb(154, 59, 244), rgb(169, 108, 255));
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  padding: 7px 8px;
+}
+
+.condition .wc {
+  font-size: 0.9rem;
+}
+
+.condition span img {
+  height: 30px;
+  background: linear-gradient(to left, rgb(199 139 255), rgb(105 1 251));
+  border-radius: 5px;
+}
+
+
+.center {
+  position: relative;
+  background: linear-gradient(to top, rgb(119, 21, 255), rgb(180, 125, 251));
+  border-radius: 20px;
+  min-width: 10rem;
+  min-height: 14rem;
+}
+
+.center h5 {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  background: #6a0cd9;
+  font-size: 0.8rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.Today_right {
+  background: url('/Images/download.png') center center/cover no-repeat;
+  border-radius: 20px;
+}
+
+.Today_right .top h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.Today_right p {
+  font-size: 0.7rem;
+}
+
+.hourCondition {
+  border-right: 1px solid rgba(255, 255, 255, 0.381);
+}
+
+.hourCondition:last-child {
+  border-right: none;
+
+}
+
+.Right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+/*
+=============================
+? -> Cities Css 
+=============================
+ */
+
+
+.Cities_Section .heading p {
+  width: 100%;
+}
+
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  gap: 2.5rem 1.5rem;
+  margin: 3rem 0;
+}
+
+.country {
+  padding: 20px 0px;
+  background: #f2f2f2;
+  ;
+  color: black;
+  border-radius: 10px;
+  width: 125px;
+}
+
+.country img {
+  height: 25px;
+}
+
+
+
+/*
+=============================
+? -> Weather Forcast News Css 
+=============================
+ */
+
+
+
+.weatherForcast {
+  background: #f2f2f2;
+}
+
+.weatherForcast .heading p {
+  width: 100%;
+}
+
+.news_card {
+  position: relative;
+  border: 1px solid silver;
+  border-radius: 15px;
+  align-items: flex-start;
+  padding: 16px 15px;
+  align-items: flex-start;
+  min-width: 18rem;
+  max-width: 18rem;
+  min-height: 19rem;
+  max-height: 19rem;
+
+
+}
+
+.news_card img {
+  height: 170px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.news_card .text {
+  align-items: flex-start;
+  width: 90%;
+  margin: 5px 0;
+}
+
+
+.news_card .text p {
+  font-size: 0.75rem;
+  color: rgb(69, 69, 69);
+}
+
+
+.news_card .text h5 {
+  font-size: 0.85rem;
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+
+.news_card .text a {
+  font-size: 0.82rem;
+  color: blue;
+  position: absolute;
+  bottom: 4px;
+}
+
+
+
+/*
+=============================
+? -> Footer Css 
+=============================
+ */
+
+.Footer {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  height: 18rem;
+}
+
+.span_C_fooot{
+  color: rgb(183 54 255);
+  font-weight: 600;
+  font-size: 2.4rem; 
+}
+
+.footer_logo a {
+  font-size: 2.2rem;
+}
+
+.footer_links ul li {
+  font-size: 0.9rem;
+}
+
+.divider {
+  background: rgb(148, 148, 148);
+  height: 1px;
+  width: 60%;
+}
+
+.socials span {
+  color: white;
+  padding: 5px 9px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+.socials span:hover {
+  cursor: pointer;
+}
+
+.end {
+  width: 60%;
+}
+
+
+
+/* 
+!=======================================
+? => Responsive Code :-
+*=======================================
+*/
+
+
+@media (max-width:1200px) {
+
+  .navbar {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width:1024px) {
+
+  .h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .condition .wc {
+    font-size: 0.7rem;
+  }
+
+  .right {
+    min-width: 10rem;
+    min-height: 12rem;
+  }
+
+  .condition span img {
+    height: 25px;
+  }
+
+  .card {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-width: 14rem;
+    height: 15.5rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .card .weather_image {
+    height: 95px;
+  }
+
+  .minmax_temp {
+    font-size: 0.9rem;
+    padding: 1px 0px;
+  }
+
+  .Top_Cites {
+    max-width: 60%;
+  }
+
+  .day {
+    font-size: 0.8rem;
+    padding: 1px 7px;
+  }
+
+  .Top_City_Weather {
+    padding: 3rem 1rem;
+  }
+
+  .Top_City_Weather .Heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* .Right {
+    flex-direction: column;
+  } */
+
+  .weather_Container {
+    flex-direction: column !important;
+  }
+
+
+  .news_card {
+    padding: 8px 8px;
+    min-width: 13rem;
+    max-width: 13rem;
+    min-height: 15rem;
+    max-height: 15rem;
+  }
+
+  .news_card img {
+    height: 100px;
+    width: 170px;
+    border-radius: 10px;
+  }
+
+  .news_card .text h5 {
+    font-size: 0.70rem;
+  }
+}
+
+@media (max-width:768px) {
+  .links {
+    display: none !important;
+  }
+
+  .news_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 12rem;
+    max-height: 12rem;
+  }
+
+  .news_card img {
+    height: 85px;
+    width: 130px;
+  }
+
+  .news_card .text p {
+    font-size: 0.55rem;
+  }
+
+  .news_card .text h5 {
+    font-size: 0.50rem;
+  }
+
+  .news_card .text a {
+    font-size: 0.7rem;
+  }
+
+  .country {
+    padding: 15px 0px;
+    width: 100px;
+  }
+
+  .country img {
+    height: 20px;
+  }
+
+  .country h5 {
+    margin-top: 0.3rem !important;
+  }
+
+  .heading h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+
+  .heading p {
+    font-size: 0.75rem;
+  }
+
+  .Today_right {
+    padding: 0.7rem 0.3rem !important;
+    width: 21rem;
+  }
+
+  .Today_right .top h4 {
+    font-size: 2rem;
+  }
+
+  .Today_right p {
+    font-size: 0.5rem;
+  }
+
+  .center {
+    min-width: 9rem;
+    min-height: 11rem;
+  }
+
+  .center img {
+    height: 80px !important;
+  }
+
+  .h2 {
+    font-size: 1.7rem;
+  }
+
+  .copyrights {
+    font-size: 0.8rem;
+  }
+
+  .socials span {
+    padding: 3px 4px;
+    font-size: 1rem;
+  }
+
+
+}
+
+
+@media (max-width:641px) {
+  .First_Section {
+    height: 15rem;
+    border-radius: 2px;
+  }
+
+  .right {
+    min-width: 7rem;
+    min-height: 8rem;
+  }
+
+  .right img {
+    height: 75px !important;
+  }
+
+  .h2 {
+    font-size: 1.4rem;
+  }
+
+  .right h5 {
+    font-size: 0.65rem;
+  }
+
+  .condition .wc {
+    font-size: 0.6rem;
+  }
+
+  .condition span img {
+    height: 15px;
+  }
+
+  .left .D_and_T p {
+    font-size: 0.72rem;
+  }
+
+  .Divider {
+    margin-top: 0 !important;
+  }
+
+  .card {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    min-width: 12rem;
+    height: 13.5rem;
+    margin: 0.3rem 0.3rem;
+  }
+
+  .minmax_temp {
+    font-size: 0.8rem;
+  }
+
+  .card p {
+    font-size: 0.5rem;
+  }
+
+  .card .weather_image {
+    height: 75px;
+  }
+
+  .day {
+    font-size: 0.6rem;
+  }
+
+  .Divider .text {
+    padding: 0px 15px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+
+  .moveCard button {
+    padding: 1px 8px;
+  }
+
+  .Top_City_Weather {
+    flex-direction: column !important;
+  }
+
+  .Top_City_Weather .Heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .Top_Cites {
+    max-width: 100%;
+  }
+
+  .cond {
+    font-size: 0.55rem;
+  }
+
+  .Wind_Rain {
+    max-width: 15rem;
+  }
+
+  .Left-Center .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width:525px) {
+
+  .logo img {
+    height: 25px !important;
+  }
+
+  .navbar {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .h2 {
+    font-size: 1.2rem;
+  }
+
+  .right img {
+    height: 55px !important;
+  }
+
+  .Right {
+    flex-direction: column;
+  }
+
+  .weatherCards {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    justify-content: center;
+  }
+
+  .weatherForcast {
+    padding: 1rem !important;
+  }
+
+  .country {
+    padding: 8px 0px;
+    width: 55px;
+    border-radius: 5px;
+  }
+
+  .country img {
+    height: 15px;
+  }
+
+  .country h5 {
+    margin-top: 0.1rem !important;
+    font-size: 0.6rem;
+  }
+
+  .heading p {
+    font-size: 0.6rem;
+  }
+
+  .heading h2 {
+    font-size: 2.1rem;
+  }
+}
+
+
+@media (max-width:450px) {
+  .heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .weatherCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news_card img {
+    height: 110px;
+    width: 170px;
+  }
+
+  .news_card {
+    padding: 5px 9px;
+    min-width: 13rem;
+    max-width: 13rem;
+    min-height: 13rem;
+    max-height: 13rem;
+  }
+
+  .heading p {
+    font-size: 0.5rem;
+  }
+
+  .left .D_and_T p {
+    font-size: 0.7rem;
+  }
+
+  .D_and_T {
+    flex-direction: column;
+  }
+
+  .First_Section {
+    height: 15rem;
+    border-radius: 2px;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem 0;
+    gap: 1rem;
+  }
+
+  .card {
+    min-width: 11.5rem;
+    height: 12.5rem;
+  }
+
+  .weather_Cards {
+    gap: 0.3rem !important;
+  }
+
+  .inp_search {
+    max-width: 8rem;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+
+  .Top_City_Weather .Heading h2 {
+    font-size: 1.7rem;
+  }
+
+  .Top_City_Weather .Heading p {
+    font-size: 0.6rem;
+  }
+
+  .city {
+    border-radius: 30px;
+    padding-left: 1rem;
+    padding-right: 2.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+    min-width: 10rem;
+    max-height: 15rem !important;
+    min-height: 15rem;
+  }
+
+  .city .temp {
+    font-size: 2rem;
+  }
+
+  .city .loc {
+    font-size: 1.1rem;
+  }
+
+  .end {
+    flex-direction: column;
+  }
+
+  .footer_logo img {
+    height: 25px !important;
+  }
+
+  .footer_logo a {
+    font-size: 1.5rem;
+  }
+
+  .copyrights,
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_links ul li {
+    font-size: 0.8rem;
+    padding: 0 0.7rem !important;
+  }
+
+  .sunset,
+  .sunrise {
+    position: relative;
+    background-size: 5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.4rem;
+    border-radius: 9px;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .sunrise h6,
+  .sunset h6 {
+    position: absolute;
+    top: 35px;
+    font-size: 0.7rem;
+    left: 11px;
+  }
+
+  .sunrise h5,
+  .sunset h5 {
+    position: absolute;
+    left: 10px;
+    font-size: 0.9rem;
+    right: 0px;
+    top: 17px;
+  }
+}
+
+@media (max-width:380px) {
+
+  .Top_City_Weather {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+
+  .weather_Cards {
+    margin: 0rem 0.1rem !important;
+  }
+
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Today_right {
+    align-items: center ;
+    justify-content: center;
+    width: fit-content;
+    max-width: 17rem;
+    border-radius: 10px;
+  }
+
+  .span_C_fooot{
+    font-size: 2rem; 
+  }
+  
+}
