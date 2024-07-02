@@ -25,13 +25,13 @@ function Navbar({ city, setCity }) {
             </div>
 
             {/* -----> Links  <----  */}
-            <div className="links flex">
+            {/* <div className="links flex">
                 <ul className='flex items-center'>
                     <li className='px-7'><a href="#">Home</a></li>
                     <li className='px-7'><a href="#">News</a></li>
                     <li className='px-7'><a href="#">Contact</a></li>
                 </ul>
-            </div>
+            </div> */}
 
             {/* -----> Search Bar  <----  */}
             <div className='search'>

@@ -6,7 +6,6 @@ import Cards from '../Card/Cards';
 import TodayWeather from '../Weather/TodayWeather';
 import TopCityWeather from './TopCityWeather';
 import Cities from '../Cities/Cities';
-import WeatherForcast from '../News/WeatherForcast';
 
 
 function Weather({ city, weatherData, setWeatherData }) {
@@ -15,7 +14,6 @@ function Weather({ city, weatherData, setWeatherData }) {
     const [sevenDayForcast, setSevenDayForcast] = useState([]);
     const [weatherImg, setWeatherImg] = useState('Images/NA.svg');
     const [topCity, setTopCity] = useState([]);
-    const [newsInfo, setNewsInfo] = useState([])
 
 
     let Key = '73c604d1c335623b5f574390a02b4485';
@@ -94,23 +92,6 @@ function Weather({ city, weatherData, setWeatherData }) {
     }, [])
 
 
-
-    //? News Api :---
-
-    useEffect(() => {
-
-        const fetchNews = () => {
-            fetch(`https://newsapi.org/v2/everything?q=weather&apiKey=a7d92bf8bfcb4742a41d04a714120a9a`)
-                .then((res) => res.json())
-                .then((data) => {
-                    setNewsInfo(data)
-                })
-                .catch((e) => {
-                    console.log(`Error`, e);
-                })
-        }
-        fetchNews()
-    }, [])
     return (
         <div className='container flex flex-col justify-center'>
             {weatherData ? (
@@ -134,9 +115,7 @@ function Weather({ city, weatherData, setWeatherData }) {
                         weatherImg={weatherImg}
                     />
                     <Cities />
-                    <WeatherForcast
-                        newsInfo={newsInfo}
-                    />
+                    
                 </>
             ) : (
                 <div>Loading...</div>

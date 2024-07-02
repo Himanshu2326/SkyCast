@@ -69,11 +69,12 @@
   outline: 2px solid rgb(159, 62, 255);
 }
 
-.span_C{
+.span_C {
   color: rgb(183 54 255);
   font-weight: 600;
   font-size: 1.4rem;
 }
+
 /*
 =============================
 ? -> First Section Css 
@@ -256,7 +257,7 @@
 
 .Top_City_Weather {
   background: rgb(245, 245, 245);
-  padding: 5rem 3rem;
+  padding: 7rem 3rem;
 
 }
 
@@ -546,73 +547,6 @@
 }
 
 
-
-/*
-=============================
-? -> Weather Forcast News Css 
-=============================
- */
-
-
-
-.weatherForcast {
-  background: #f2f2f2;
-}
-
-.weatherForcast .heading p {
-  width: 100%;
-}
-
-.news_card {
-  position: relative;
-  border: 1px solid silver;
-  border-radius: 15px;
-  align-items: flex-start;
-  padding: 16px 15px;
-  align-items: flex-start;
-  min-width: 18rem;
-  max-width: 18rem;
-  min-height: 19rem;
-  max-height: 19rem;
-
-
-}
-
-.news_card img {
-  height: 170px;
-  width: 250px;
-  border-radius: 10px;
-}
-
-.news_card .text {
-  align-items: flex-start;
-  width: 90%;
-  margin: 5px 0;
-}
-
-
-.news_card .text p {
-  font-size: 0.75rem;
-  color: rgb(69, 69, 69);
-}
-
-
-.news_card .text h5 {
-  font-size: 0.85rem;
-  margin: 5px 0;
-  font-weight: 400;
-}
-
-
-.news_card .text a {
-  font-size: 0.82rem;
-  color: blue;
-  position: absolute;
-  bottom: 4px;
-}
-
-
-
 /*
 =============================
 ? -> Footer Css 
@@ -626,10 +560,10 @@
   height: 18rem;
 }
 
-.span_C_fooot{
+.span_C_fooot {
   color: rgb(183 54 255);
   font-weight: 600;
-  font-size: 2.4rem; 
+  font-size: 2.4rem;
 }
 
 .footer_logo a {
@@ -745,58 +679,11 @@
   .weather_Container {
     flex-direction: column !important;
   }
-
-
-  .news_card {
-    padding: 8px 8px;
-    min-width: 13rem;
-    max-width: 13rem;
-    min-height: 15rem;
-    max-height: 15rem;
-  }
-
-  .news_card img {
-    height: 100px;
-    width: 170px;
-    border-radius: 10px;
-  }
-
-  .news_card .text h5 {
-    font-size: 0.70rem;
-  }
 }
 
 @media (max-width:768px) {
   .links {
     display: none !important;
-  }
-
-  .news_card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 6px;
-    min-width: 10rem;
-    max-width: 10rem;
-    min-height: 12rem;
-    max-height: 12rem;
-  }
-
-  .news_card img {
-    height: 85px;
-    width: 130px;
-  }
-
-  .news_card .text p {
-    font-size: 0.55rem;
-  }
-
-  .news_card .text h5 {
-    font-size: 0.50rem;
-  }
-
-  .news_card .text a {
-    font-size: 0.7rem;
   }
 
   .country {
@@ -980,7 +867,7 @@
   }
 
   .h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .right img {
@@ -996,10 +883,6 @@
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     justify-content: center;
-  }
-
-  .weatherForcast {
-    padding: 1rem !important;
   }
 
   .country {
@@ -1036,19 +919,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .news_card img {
-    height: 110px;
-    width: 170px;
-  }
-
-  .news_card {
-    padding: 5px 9px;
-    min-width: 13rem;
-    max-width: 13rem;
-    min-height: 13rem;
-    max-height: 13rem;
-  }
-
   .heading p {
     font-size: 0.5rem;
   }
@@ -1061,17 +931,10 @@
     flex-direction: column;
   }
 
-  .First_Section {
-    height: 15rem;
-    border-radius: 2px;
-    flex-direction: column;
-    height: fit-content;
-    padding: 2rem 0;
-    gap: 1rem;
-  }
+
 
   .card {
-    min-width: 11.5rem;
+    min-width: 12.1rem;
     height: 12.5rem;
   }
 
@@ -1168,9 +1031,32 @@
     right: 0px;
     top: 17px;
   }
+
+  .Today_right {
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .weatherCondition {
+    gap: 0.7rem !important;
+  }
+
+  .condition .wc {
+    font-size: 0.55rem;
+  }
 }
 
 @media (max-width:380px) {
+
+  .First_Section {
+    height: 15rem;
+    border-radius: 2px;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem 0;
+    gap: 1rem;
+  }
 
   .Top_City_Weather {
     padding-left: 0.1rem;
@@ -1187,15 +1073,12 @@
   }
 
   .Today_right {
-    align-items: center ;
-    justify-content: center;
-    width: fit-content;
     max-width: 17rem;
     border-radius: 10px;
   }
 
-  .span_C_fooot{
-    font-size: 2rem; 
+  .span_C_fooot {
+    font-size: 2rem;
   }
-  
+
 }

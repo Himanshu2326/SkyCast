@@ -10,18 +10,18 @@ function Footer() {
         <a href="#">Sky<span className='span_C_fooot'>C</span>ast</a>
       </div>
 
-      <div className="footer_links">
+      {/* <div className="footer_links">
         <ul className='flex'>
           <li className='px-6'><a href="#">Home</a></li>
           <li className='px-6'><a href="#">News</a></li>
           <li className='px-6'><a href="#">Contact</a></li>
         </ul>
-      </div>
+      </div> */}
 
       <div className="divider"></div>
 
       <div className="end flex justify-between">
-        <div className="copyrights">© 2022 SkyCast. All rights reserved</div>
+        <div className="copyrights">© 2024 SkyCast. All rights reserved</div>
         <div className="socials">
           <span><i className="fa-brands fa-linkedin"></i></span>
           <span><i className="fa-brands fa-x-twitter"></i></span>
