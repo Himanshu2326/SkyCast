@@ -21,7 +21,7 @@ function Footer() {
       <div className="divider"></div>
 
       <div className="end flex justify-between">
-        <div className="copyrights">© 2024 SkyCast. All rights reserved</div>
+        <div className="copyrights">© 2024 SkyCast. Design By Himanshu</div>
         <div className="socials">
           <span><a href="https://www.linkedin.com/in/himanshuprajapati23/"><i className="fa-brands fa-linkedin"></i></a></span>
           <span><a href="https://twitter.com/Himanshu2623"><i className="fa-brands fa-x-twitter"></i></a></span>
