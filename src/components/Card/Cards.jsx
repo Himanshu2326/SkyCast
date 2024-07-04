@@ -1,14 +1,9 @@
-
-
-import React from 'react'
-import { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { wmoWeatherCodes } from '../WmoCode/WMO_Code';
 
 const Cards = ({ sevenDayForcast }) => {
 
-
-    const [moveCard, setMoveCard] = useState(0);
-
+    const containerRef = useRef(null);
 
     const weeklyWeather = () => {
         if (!sevenDayForcast || !sevenDayForcast.daily) return;
@@ -19,14 +14,12 @@ const Cards = ({ sevenDayForcast }) => {
         const weeklyElements = [];
 
         for (let i = 0; i < 7; i++) {
-
             const code = weather_code[i];
             const imgPath = wmoWeatherCodes[code]?.img || 'Images/NA.svg';
             const weatherPath = wmoWeatherCodes[code]?.description || 'Not Found';
 
-
             weeklyElements.push(
-                <div key={i} className="card flex items-center flex-col py-6 justify-center" style={{ transform: `translateX(${moveCard}rem)` }}>
+                <div key={i} className="card flex items-center flex-col py-6 justify-center">
                     <div className="cond">{weatherPath}</div>
                     <img className='weather_image' src={imgPath} alt="" />
                     <div className="Day_and_Time flex gap-2 mb-2">
@@ -45,13 +38,13 @@ const Cards = ({ sevenDayForcast }) => {
         }
 
         return weeklyElements;
-    }
+    };
 
     const DemoWeeklyWeather = () => {
-        let demoWeeklyElements = []
+        let demoWeeklyElements = [];
         for (let i = 0; i < 7; i++) {
             demoWeeklyElements.push(
-                <div key={i} className="card flex items-center flex-col py-6 justify-center" style={{ transform: `translateX(${moveCard}rem)` }}>
+                <div key={i} className="card flex items-center flex-col py-6 justify-center">
                     <div className="cond">Today</div>
                     <img src='/Images/NA_Black.svg' alt="" style={{ height: "100px" }} />
                     <div className="Day_and_Time flex gap-2 mb-2">
@@ -66,41 +59,39 @@ const Cards = ({ sevenDayForcast }) => {
                         <p><i className="fa-solid fa-wind p-2 pr-2"> </i>Min: 6km/h</p>
                     </div>
                 </div>
-            )
+            );
         }
         return demoWeeklyElements;
-    }
+    };
 
     const slideLeft = () => {
-        if (moveCard === 0) return;
-        setMoveCard(moveCard + 18.5);
-    }
-
+        if (containerRef.current) {
+            containerRef.current.scrollLeft -= 300;
+        }
+    };
+    
     const slideRight = () => {
-        if (moveCard === -37) return;
-        setMoveCard(moveCard - 18.5);
-    }
-
+        if (containerRef.current) {
+            containerRef.current.scrollLeft += 300; 
+        }
+    };
 
     return (
         <div className='container my-10'>
             <div className="Divider flex justify-around my-7">
                 <div className="text flex items-center">
-                    Weekly Forcast
+                    Weekly Forecast
                 </div>
-
                 <div className="moveCard flex gap-4">
-                    <button onClick={slideLeft} ><i className="fa-solid fa-arrow-left"></i></button>
+                    <button onClick={slideLeft}><i className="fa-solid fa-arrow-left"></i></button>
                     <button onClick={slideRight}><i className="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-
-            {/*  ------->  Cards  <------- */}
-            <div className="weather_Cards mx-5 flex gap-5">
+            <div className="weather_Cards mx-5 flex gap-5 overflow-x-scroll" ref={containerRef}>
                 {sevenDayForcast && sevenDayForcast.daily ? weeklyWeather() : DemoWeeklyWeather()}
             </div>
         </div>
-    )
+    );
 }
 
-export default Cards
+export default Cards;

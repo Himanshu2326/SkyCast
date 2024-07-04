@@ -32,9 +32,17 @@
   margin: 0 5px;
 }
 
-/* :root{
-  
-} */
+.loader {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader img {
+  height: 70px;
+}
 
 .weather-container {
   display: flex;
@@ -146,7 +154,9 @@
 
 .weather_Cards {
   overflow-y: auto;
-  transition: transform 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+ scroll-behavior: smooth;
+
 }
 
 
@@ -163,6 +173,8 @@
   transition: 0.5s;
   font-weight: 400;
   padding-left: 0.7rem;
+  transition: 0.5s ease-in-out;
+ scroll-behavior: smooth;
   padding-right: 0.7rem;
   min-width: 16rem;
   height: 18rem;
@@ -223,7 +235,8 @@
 }
 
 .Air_Rain p i {
-  font-size: 0.8rem;
+  font-size: 0.65rem !important;
+  gap: 0.2rem !important;
 }
 
 .card p {
@@ -604,6 +617,91 @@
 */
 
 
+@media (max-width:1535px) {
+
+
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    15% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(-16rem);
+    }
+
+    40% {
+      transform: translateX(-16rem);
+    }
+
+    50% {
+      transform: translateX(-30rem);
+    }
+
+    65% {
+      transform: translateX(-30rem);
+    }
+
+    80% {
+      transform: translateX(-16rem);
+    }
+
+    90% {
+      transform: translateX(-16rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
+  }
+
+
+}
+
+
+@media (max-width:1279px) {
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    15% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(-26rem);
+    }
+
+    40% {
+      transform: translateX(-26rem);
+    }
+
+    50% {
+      transform: translateX(-39.5rem);
+    }
+
+    65% {
+      transform: translateX(-39.5rem);
+    }
+
+    80% {
+      transform: translateX(-26rem);
+    }
+
+    90% {
+      transform: translateX(-26rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
+  }
+}
+
 @media (max-width:1200px) {
 
   .navbar {
@@ -613,7 +711,7 @@
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
 
   .h2 {
     font-size: 2rem;
@@ -679,6 +777,44 @@
   .weather_Container {
     flex-direction: column !important;
   }
+
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    15% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(-26rem);
+    }
+
+    40% {
+      transform: translateX(-26rem);
+    }
+
+    50% {
+      transform: translateX(-50rem);
+    }
+
+    65% {
+      transform: translateX(-50rem);
+    }
+
+    80% {
+      transform: translateX(-26rem);
+    }
+
+    90% {
+      transform: translateX(-26rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
+  }
 }
 
 @media (max-width:768px) {
@@ -741,6 +877,44 @@
   .socials span {
     padding: 3px 4px;
     font-size: 1rem;
+  }
+
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    15% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(-26rem);
+    }
+
+    40% {
+      transform: translateX(-26rem);
+    }
+
+    50% {
+      transform: translateX(-54.5rem);
+    }
+
+    65% {
+      transform: translateX(-54.5rem);
+    }
+
+    80% {
+      transform: translateX(-26rem);
+    }
+
+    90% {
+      transform: translateX(-26rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
   }
 
 
@@ -849,6 +1023,45 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    15% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(-26rem);
+    }
+
+    40% {
+      transform: translateX(-26rem);
+    }
+
+    50% {
+      transform: translateX(-39.5rem);
+    }
+
+    65% {
+      transform: translateX(-39.5rem);
+    }
+
+    80% {
+      transform: translateX(-26rem);
+    }
+
+    90% {
+      transform: translateX(-26rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
   }
 }
 
@@ -1051,6 +1264,44 @@
 
   .condition .wc {
     font-size: 0.55rem;
+  }
+
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0rem);
+    }
+
+    15% {
+      transform: translateX(0rem);
+    }
+
+    25% {
+      transform: translateX(-29rem);
+    }
+
+    40% {
+      transform: translateX(-29rem);
+    }
+
+    50% {
+      transform: translateX(-43rem);
+    }
+
+    65% {
+      transform: translateX(-43rem);
+    }
+
+    80% {
+      transform: translateX(-29rem);
+    }
+
+    90% {
+      transform: translateX(-29rem);
+    }
+
+    100% {
+      transform: translateX(0rem);
+    }
   }
 }
 

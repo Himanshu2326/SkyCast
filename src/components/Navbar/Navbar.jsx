@@ -14,14 +14,20 @@ function Navbar({ city, setCity }) {
         setCityValue(e.target.value)
     }
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleCityChange();
+        }
+    };
+
     return (
 
         <div className='navbar flex items-center justify-between my-6 '>
 
             {/* -----> Logo  <----  */}
             <div className="logo flex items-center">
-                <img className='px-2' src="Images/night.png" alt="" style={{ height: "35px" }} />
-                <a href="#">Sky<span className='span_C'>C</span>ast</a>
+                <img className='px-2' src="Images/night.png" alt="night" style={{ height: "35px" }} />
+                <a href="/">Sky<span className='span_C'>C</span>ast</a>
             </div>
 
             {/* -----> Links  <----  */}
@@ -44,8 +50,9 @@ function Navbar({ city, setCity }) {
                     value={cityValue}
                     autoComplete='off'
                     placeholder='Enter Your City'
+                    onKeyDown={handleKeyDown} // Added event listener for keydown
                 />
-                <span className='btn' onClick={handleCityChange}>Search</span>
+                 <span className='btn' onClick={handleCityChange}>Search</span>
                 {/* <button className='loction-btn'><i className="fa-solid fa-location-dot"></i></button> */}
             </div>
 
