@@ -66,13 +66,18 @@ const Cards = ({ sevenDayForcast }) => {
 
     const slideLeft = () => {
         if (containerRef.current) {
+            //* When slideLeft attempts to scroll left (scrollLeft -= 300),
+            //* it checks if it's already at the beginning (0). If it is, it doesn't scroll further left.
             containerRef.current.scrollLeft -= 300;
         }
     };
-    
+
     const slideRight = () => {
         if (containerRef.current) {
-            containerRef.current.scrollLeft += 300; 
+            //* When slideRight attempts to scroll right (scrollLeft += 200),
+            //* it checks if scrolling further would reveal empty space at the end of the content. 
+            //* If it would, it doesn't scroll further right.
+            containerRef.current.scrollLeft += 300;
         }
     };
 
